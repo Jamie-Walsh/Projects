@@ -1,2 +1,2 @@
 # Projects
-A selection of Projects i have created at college and at home.
+A selection of Projects which I have created at college and at home.
