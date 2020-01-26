@@ -1,0 +1,142 @@
+/*********************************************************
+    QUESTION 2: Populate tables that are my responsibility.
+*********************************************************/
+--New customer making a business account--
+INSERT INTO DT2112C5.CONTRACT VALUES
+(
+    'Business', --Contract type--
+    16 --Conract ID--
+);
+
+--inserts the details of the new customer.
+INSERT INTO DT2112C5.CUSTOMER VALUES 
+(
+    16, --Customer ID--
+    'Paul Blart', --Name--
+    'Louth', --Address--
+    'PBlart123@yahoo.com', --Email--
+    106 --Customer ID--
+);
+
+--New customer making a personal account--
+INSERT INTO DT2112C5.CONTRACT VALUES 
+(
+    'Personal', --Contract type--
+    17 --Conract ID--
+);
+
+--inserts the details of the new customer.
+INSERT INTO DT2112C5.CUSTOMER VALUES 
+(
+    17, 
+    'Mallow Man',
+    'Mayo', 
+    'mallowm@hotmail.com',
+    107 --Customer ID--
+);
+
+/*********************************************************
+    QUESTION 4 (a) -- Projection, Selection (Restriction)
+    and Sorting
+*********************************************************/
+SELECT * FROM DT2112C5.CUSTOMER --select all contents of customer
+WHERE CUSTOMER_ADDRESS = '&CUSTOMER_ADDRESS' --prompts user input
+ORDER BY (CUSTOMER_ADDRESS); --Sorting by the customer_address
+
+SELECT CONTRACT_ID, CONTRACT_TYPE FROM DT2112C5.CONTRACT --Projection
+WHERE CONTRACT_TYPE = '&CONTRACT_TYPE' --Selection
+ORDER BY (CONTRACT_ID); --Sorting
+
+/*Takes the id and email from customers who's...
+...name is thomas jerry or who live in Dublin*/
+SELECT CUSTOMER_ID, CUSTOMER_EMAIL FROM DT2112C5.CUSTOMER
+WHERE (CUSTOMER_ADDRESS= 'Dublin' OR CUSTOMER_NAME= 'Thomas Jerry')
+ORDER BY (CUSTOMER_EMAIL);
+
+/*********************************************************
+    QUESTION 4 (b) -- non aggregate select statements
+*********************************************************/
+SELECT CONTRACT_ID, CUSTOMER_NAME FROM DT2112C5.CUSTOMER 
+WHERE CUSTOMER_ADDRESS= 'Dublin'; --Displays id and the name of customers who live in dublin 
+
+
+/*********************************************************
+    QUESTION 4 (c) -- Checking for Nulls
+*********************************************************/
+SELECT UNIQUE(CUSTOMER_NAME) FROM DT2112C5.CUSTOMER 
+WHERE CUSTOMER_EMAIL IS NOT NULL; --Displays the name of customers who have given their email address.
+
+SELECT CONTRACT_ID FROM DT2112C5.CONTRACT
+WHERE CONTRACT_TYPE IS NOT NULL; --Displays the id of customers where contract type isn't empty.
+
+/*********************************************************
+    QUESTION 4 (d) -- Aggregation, aggregation with 
+    "Group by", and aggregation with "Having"
+*********************************************************/
+SELECT COUNT(CUSTOMER_ID) FROM DT2112C5.CUSTOMER WHERE CUSTOMER_ADDRESS= 'Dublin'; --Aggregation using WHERE
+SELECT COUNT(CONTRACT_TYPE) FROM DT2112C5.CONTRACT WHERE CONTRACT_TYPE= 'Business'; --Shows the number of business contracts
+
+SELECT COUNT(CUSTOMER_ID), CUSTOMER_ADDRESS FROM DT2112C5.CUSTOMER GROUP BY CUSTOMER_ADDRESS; --Shows number of custmers from each address
+SELECT COUNT(CONTRACT_ID), CONTRACT_TYPE FROM DT2112C5.CONTRACT GROUP BY CONTRACT_TYPE; --Aggregation using GROUP BY
+
+SELECT CUSTOMER_ID, CUSTOMER_NAME, CUSTOMER_EMAIL, CUSTOMER_ADDRESS FROM DT2112C5.CUSTOMER GROUP BY CUSTOMER_ID, CUSTOMER_NAME, CUSTOMER_EMAIL, CUSTOMER_ADDRESS HAVING CUSTOMER_ADDRESS= 'Dublin'; --Displays details of customers from Dublin.
+SELECT CONTRACT_ID, CONTRACT_TYPE FROM DT2112C5.CONTRACT GROUP BY CONTRACT_ID, CONTRACT_TYPE HAVING CONTRACT_TYPE= 'Personal'; --Aggregation using HAVING
+
+/*********************************************************
+    Question 4 (e) -- Use of MINUS, INTERSECT and UNION.
+*********************************************************/
+--This shows the names of customers who's name is not Thomas Jerry minus people who are from dublin.
+SELECT (CUSTOMER_NAME) FROM DT2112C5.CUSTOMER WHERE CUSTOMER_NAME!='Thomas Jerry'
+MINUS --Using minus to take away people from dublin.
+SELECT (CUSTOMER_NAME) FROM DT2112C5.CUSTOMER WHERE CUSTOMER_ADDRESS= 'Dublin';
+
+--This shows The contract id of customers who live in dublin and have a business account
+SELECT (CONTRACT_ID) FROM DT2112C5.CUSTOMER WHERE CUSTOMER_ADDRESS= 'Dublin'
+INTERSECT --Use intersect to find the ids that follow the two rules applied.
+SELECT (CONTRACT_ID) FROM DT2112C5.CONTRACT WHERE CONTRACT_TYPE= 'Business';
+
+-- Shows name and address of customers who contract id is 12 and who's customer id is more than 104.
+SELECT CUSTOMER_NAME, CUSTOMER_ADDRESS FROM DT2112C5.CUSTOMER WHERE CONTRACT_ID = 12
+UNION --Union joins the two selects together.
+SELECT CUSTOMER_NAME, CUSTOMER_ADDRESS FROM DT2112C5.CUSTOMER WHERE CUSTOMER_ID>104;
+
+/**************************************************************
+    QUESTION 4 (f) -- Join...using, join...on, join...where
+**************************************************************/
+SELECT * FROM DT2112C5.CONTRACT JOIN DT2112C5.CUSTOMER USING(CONTRACT_ID) ORDER BY CONTRACT_ID; --joins tables using the primary key contract_id
+
+SELECT CUSTOMER_ID, CUSTOMER_EMAIL FROM DT2112C5.CUSTOMER JOIN DT2112C5.CONTRACT ON (DT2112C5.CONTRACT.CONTRACT_ID = DT2112C5.CUSTOMER.CONTRACT_ID); -- JOIN...ON
+
+SELECT CUSTOMER_NAME, CUSTOMER_ADDRESS, CUSTOMER_ID FROM DT2112C5.CUSTOMER JOIN DT2112C5.CONTRACT USING (CONTRACT_ID) WHERE CONTRACT_TYPE= 'Personal'; --Joins tables where customers have personal contracts
+
+/*************************************************
+QUESTION 4 (g) -- OUTER JOINS
+*************************************************/
+--outer join connecting customer to contract using "ON" contract.contract_id= customer.contract_id
+SELECT DT2112C5.CUSTOMER.CONTRACT_ID, DT2112C5.CUSTOMER.CUSTOMER_NAME, DT2112C5.CUSTOMER.CUSTOMER_EMAIL
+FROM DT2112C5.CUSTOMER
+FULL OUTER JOIN DT2112C5.CONTRACT 
+ON DT2112C5.CONTRACT.CONTRACT_ID = DT2112C5.CUSTOMER.CONTRACT_ID
+ORDER BY (CUSTOMER_NAME); --orders the names alphabetically.
+
+SELECT DT2112C5.CONTRACT.CONTRACT_ID, DT2112C5.CONTRACT.CONTRACT_TYPE
+FROM DT2112C5.CONTRACT
+FULL OUTER JOIN DT2112C5.CUSTOMER --joins contract to customer.
+ON DT2112C5.CONTRACT.CONTRACT_ID = DT2112C5.CUSTOMER.CONTRACT_ID
+ORDER BY (CONTRACT_ID); --lowest number is displayed first.
+
+/**************************************************
+    QUESTION 4 (h)-- Sub-Queries.
+**************************************************/
+--This sub-query shows the contract id, name, and address of the customers whos contract id is more that 12.
+SELECT CONTRACT_ID, CUSTOMER_NAME, CUSTOMER_ADDRESS FROM DT2112C5.CUSTOMER
+WHERE CONTRACT_ID
+IN (SELECT CONTRACT_ID FROM DT2112C5.CONTRACT WHERE CONTRACT_ID>12);
+
+--This sub-query shows the contract id and contract type for the customers who live in dublin.
+SELECT CONTRACT_ID, CONTRACT_TYPE FROM DT2112C5.CONTRACT
+WHERE CONTRACT_ID
+IN (SELECT CONTRACT_ID FROM DT2112C5.CUSTOMER WHERE CUSTOMER_ADDRESS= 'Dublin');
+
+--This select statement shows all changes made.
+SELECT * FROM DT2112C5.CUSTOMER JOIN DT2112C5.CONTRACT USING (CONTRACT_ID);
