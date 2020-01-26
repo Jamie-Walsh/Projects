@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    tools:context=".Pubs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="320dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="BarGenie"
+                    android:textColor="#ffffff"
+                    android:textSize="35dp" />
+
+                <Spinner
+                    android:id="@+id/spin"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dropdown"
+                    android:dropDownWidth="100dp"
+                    android:dropDownHorizontalOffset="100dp"
+                    android:dropDownVerticalOffset="60dp"
+                    android:paddingTop="2sp"
+                    android:paddingBottom="2dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:layout_marginLeft="345dp"
+                    android:id="@+id/imageView"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dropdown" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/Whelans"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/whelans"/>
+
+            <TextView
+                android:id="@+id/PubName1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/Whelans"
+                android:background="#E6d3d3d3"
+                android:text="Whelans"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location1"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/Whelans"
+                android:text="Wexford St, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/Whelans"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/WhelansRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Whelans"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="3dp"
+                android:text="4.7"
+                android:textSize="44dp" />
+
+            <ImageButton
+                android:id="@+id/Temple"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/Whelans"
+                android:layout_marginBottom="-208dp"
+                android:background="@drawable/temple_bar" />
+
+            <TextView
+                android:id="@+id/PubName2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/Temple"
+                android:background="#E6d3d3d3"
+                android:text="The Temple Bar"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location2"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/PubName2"
+                android:text="Temple Bar, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/Temple"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="13dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/TempleRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Temple"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="6dp"
+                android:text="3.1"
+                android:textSize="44dp" />
+
+            <ImageButton
+                android:id="@+id/Whitworth"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/Temple"
+                android:layout_marginBottom="-208dp"
+                android:background="@drawable/whitworth" />
+
+            <TextView
+                android:id="@+id/PubName3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/Whitworth"
+                android:background="#E6d3d3d3"
+                android:text="The Whitworth"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location3"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/PubName3"
+                android:text="Drumcondra, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/Whitworth"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="13dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/WhitworthRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Whitworth"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="6dp"
+                android:text="4.5"
+                android:textSize="44dp" />
+
+            <ImageButton
+                android:id="@+id/Token"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/Whitworth"
+                android:layout_marginBottom="-208dp"
+                android:background="@drawable/token" />
+
+            <TextView
+                android:id="@+id/PubName4"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/Token"
+                android:background="#E6d3d3d3"
+                android:text="Token"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location4"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/PubName4"
+                android:text="Smithfield, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/Token"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="13dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/TokenRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Token"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="6dp"
+                android:text="4.3"
+                android:textSize="44dp"/>
+
+            <ImageButton
+                android:id="@+id/LongHall"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/Token"
+                android:layout_marginBottom="-208dp"
+                android:background="@drawable/long_hall" />
+
+            <TextView
+                android:id="@+id/PubName5"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/LongHall"
+                android:background="#E6d3d3d3"
+                android:text="The Long Hall"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location5"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/PubName5"
+                android:text="George's St, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/LongHall"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="13dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/LongHallRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/LongHall"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="6dp"
+                android:text="3.9"
+                android:textSize="44dp"/>
+
+            <ImageButton
+                android:id="@+id/Opium"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/LongHall"
+                android:layout_marginBottom="-208dp"
+                android:background="@drawable/opium" />
+
+            <TextView
+                android:id="@+id/PubName6"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignBottom="@+id/Opium"
+                android:background="#E6d3d3d3"
+                android:text="Opium"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/Location6"
+                android:layout_width="195dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/PubName6"
+                android:text="Wexford St, Dublin"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/star6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/Opium"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="13dp"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/OpiumRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Opium"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="6dp"
+                android:text="4.8"
+                android:textSize="44dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

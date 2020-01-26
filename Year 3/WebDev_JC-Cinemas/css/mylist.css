@@ -1,0 +1,60 @@
+#Escape
+{
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+
+#title
+{
+    color: #EAC56D;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 0 1.4px 0 black,
+                0 2.4px 0 silver;
+    border-bottom: solid;
+    border-color: black;
+    padding-top: 5px;
+
+}
+
+#no_list
+{
+    text-align: center;
+    color: #909090;
+    font-size: 25px;
+    font-style: oblique;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#tv
+{
+    width: 350px;
+    height: 400px;
+}
+
+#safe
+{
+    width: 170px;
+    height: 200px;
+}
+
+#move
+{
+    background-color: #B70100;
+    border-color: #B70100;
+    border-radius: 4px;
+    color: #EAC56D;
+
+}
+
+@media (max-width: 500px)
+{
+    #tv
+    {
+        width: 220px;
+        height: 280px;
+    }
+}

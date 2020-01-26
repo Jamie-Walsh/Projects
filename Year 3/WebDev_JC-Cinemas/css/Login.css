@@ -1,0 +1,225 @@
+#Whole
+{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 1300px;
+}
+
+#main
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 900px; 
+    background-color: white;
+    font-size: 17px;
+    font-family: Lucida Grande, lucida sans;
+	border: 2px solid black;
+}
+
+#Top
+{
+    width: 1000px;
+    float: top;
+    font-size: larger;
+}
+
+.container2
+{
+    height: 160px;
+    position: relative;
+    text-align: center;
+    color: Black;
+}
+
+#Banner
+{
+    float: top;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    width: 1000px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+#JC
+{
+	color: #EAC56D;
+	font-size: 45px;
+	margin-left: 50px;
+	font-family: Cookie;
+	text-decoration: none;
+	background-color:black;
+}
+
+li
+{
+	font-size: 20px;
+    float: right;
+    border-right: 1px solid white;
+}
+
+#first
+{
+	border-left: 1px solid white;
+}
+
+#last
+{
+	border-right: none;
+}
+
+li a
+{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.active
+{
+    color: #EAC56D;
+}
+
+a:hover
+{
+    transition-duration: 0.4s;
+	color: black;
+    background-color: #EAC56D;
+}
+
+#button
+{
+    background-color: #EC0910;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    height: 35px;
+    width: 100px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Escape
+{
+	width: 60px;
+	height: 60px;
+	float: right;
+}
+
+#Whole
+{
+	background-size: 100% 1000px;
+	height: 1000px;
+}
+
+#Heading
+{
+	color: rgb(240,0,0);
+	font-size: 50px;
+	text-shadow: 1px 2px black;
+	text-align: center;
+}
+
+#Left
+{
+	padding: 14px 16px;
+	text-decoration: none;
+	width: 45%;
+	height: 40%;
+	float: left;
+	font-size: 25;
+	font: Serif;
+}
+
+#Right
+{
+	width: 45%;
+	height: 40%;
+	float: right;
+	font-size: larger;
+}
+
+.datebox
+{
+    height:30px;
+    font-size:20px;
+}
+
+.textBox
+{
+    height:30px;
+	width: 300px;
+    font-size:20px;
+}
+
+#TextBox
+{
+    height:30px;
+	width: 300px;
+    font-size:20px;
+}
+
+#SignUp
+{
+	padding: 18px 30px;
+	float: right;
+	border-left: double;
+	width:45%;
+	height: 72.7%;
+	font-size: 25;
+	font: Serif;
+}
+
+#Center
+{
+	text-align: center;
+	width:100%;
+	height: 5%;
+	font-size: 25px;
+	font: Serif;
+}
+
+span
+{
+	color:#EC0910;
+	font-weight:bold;
+	font-style: italic;
+	display: inline-block;
+}
+
+.bigButton 
+{
+    background-color: #EC0910;
+    border: none;
+    color: white;
+    padding: 16px 35px;
+	float: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.button 
+{
+    background-color: #EC0910;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}

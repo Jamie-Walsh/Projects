@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="BarGenie"
+            android:textColor="#ffffff"
+            android:textSize="35dp" />
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/dropdown"
+            android:dropDownWidth="100dp"
+            android:dropDownHorizontalOffset="100dp"
+            android:dropDownVerticalOffset="60dp"
+            android:paddingTop="2sp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_marginLeft="345dp"
+            android:id="@+id/imageView"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dropdown" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/SignButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Confirm"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Login!"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/LoginComment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-19dp"
+        android:text="Log in to Enjoy All Features" />
+
+    <EditText
+        android:id="@+id/LogUsername"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_alignStart="@+id/LogPass"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/LogPass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-202dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/SignUpComment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-285dp"
+        android:text="Sign Up!"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/SignUpComment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LoginComment"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="286dp"
+        android:gravity="center"
+        android:text="New? Create an Account Now" />
+
+    <EditText
+        android:id="@+id/SigUsername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_alignStart="@+id/LogUsername"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="194dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/SigPass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LogUsername"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="382dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/Confirm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginButton"
+        android:layout_alignStart="@+id/SigUsername"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="189dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_alignStart="@+id/SigUsername"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:text="Login" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+#container
+{
+    border-top: 2px solid black;
+    float: top;
+    position:relative;
+    height:570px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#TextBlob
+{
+    border:2px solid black;
+    position: absolute;
+    top: 57%;
+    left: 16%;
+    color: white;
+    background: rgba(0,0,0, 0.7);
+}
+
+#Titles
+{
+    font-size: 40px;
+    color: #EAC56D;
+    text-shadow: 0 1.4px 0 black,
+                 0 2.4px 0 silver;
+    padding-left: 5px;
+}
+
+#Inner
+{
+    padding-left: 5px;
+    font-style: italic;
+}
+
+#LeftButton
+{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 568px;
+    width: 120px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+#LeftButton:hover , #RightButton:hover
+{
+    transition-duration: 0.4s;
+    color: black;
+    background-color: rgb(255, 0, 0, 0.4);
+}
+
+#Arrow
+{
+    height: 70px;
+    width: 60px;
+    margin: 30px;
+    margin-top: 235px;
+}
+
+#RightButton
+{
+    float:right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 568px;
+    width: 120px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+#noStyle
+{
+    text-decoration: none;
+}
+
+#noStyle:hover
+{
+    text-decoration: none;
+}

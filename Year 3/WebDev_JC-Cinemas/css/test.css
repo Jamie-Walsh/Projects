@@ -1,0 +1,179 @@
+#body
+{
+    width: 100%;
+}
+
+#Background
+{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#Empty
+{
+    height: 40px;
+}
+
+#Main
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    font-size: 17px;
+    font-style: italic;
+    font-family: Lucida Grande, lucida sans;
+    border: 2px solid black;
+}
+
+#Top
+{
+    width: 100%;
+    font-size: larger;
+    background-color: #FFFFFF;
+}
+
+.navbar-default
+{
+    background-color:black;
+    background-image: none;
+    background-repeat: no-repeat;
+ }
+
+p
+{
+    margin-bottom: 0;
+}
+
+.container
+{
+    width: 100%;
+    height: 160px;
+    color: Black;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.navbar
+{
+    padding: 0;
+
+}
+
+.navbar-brand
+{
+    color: #EAC56D;
+    font-size: 40px;
+    font-family: Cookie;
+    text-decoration: none;
+    padding-top:0;
+    padding-bottom:0;
+    margin-left: 20px;
+}
+
+
+a:link
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li
+{
+    border-right: 1px solid white;
+}
+
+#first
+{
+    border-left: 1px solid white;
+}
+
+#last
+{
+    border-right: none;
+}
+
+li a
+{
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18.5px;
+}
+
+.active
+{
+    color: #EAC56D;
+}
+
+a:hover
+{
+    transition-duration: 0.4s;
+    color: black;
+    background-color: #EAC56D;
+}
+
+#middle
+{
+    height: 570px;
+}
+
+#name
+{
+    font-family: Cookie;
+    text-decoration: none;
+    color: #EAC56D;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#footer
+{
+    width: 100%;
+    height: 80px;
+    background-color: Black;
+}
+
+#name_middle
+{
+    text-align: left;
+    color: #EAC56D;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+@media (max-width: 468px)
+{
+    #main
+    {
+        width:95%;
+    }
+
+    #first
+    {
+        border-left: none;
+    }
+
+    li
+    {
+        border: none;
+    }
+
+    #name
+    {
+        font-size: 15px;
+    }
+
+    #name_middle
+    {
+        font-size: 30px;
+    }
+
+}
