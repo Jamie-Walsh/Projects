@@ -1,0 +1,18 @@
+#Left
+{
+	padding: 14px 16px;
+	text-decoration: none;
+	width:500px;
+	height: 300px;
+	float: left;
+	font-size: 25;
+	font: Serif;
+}
+
+#Right
+{
+	width:450px;
+	height: 500px;
+	float: right;
+	font-size: larger;
+}

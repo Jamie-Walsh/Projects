@@ -1,0 +1,48 @@
+#Center
+{
+	float: top;
+	text-align: center;
+	width:600px;
+	margin: 0 auto;
+	height: 50px;
+	font-size: 25;
+	font: Serif;
+}
+
+span
+{ 
+	color:#EC0910;
+	font-weight:bold;
+	font-style: italic; 
+}
+
+#Description
+{
+	font-size: 20px;
+}
+
+#Pic1
+{
+	float: left;
+	height: 740px;
+	width: 180px;
+}
+
+#Pic2
+{
+	float: right;
+	height: 740px;
+	width: 180px;
+}
+
+.button 
+{
+    background-color: #EC0910;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}

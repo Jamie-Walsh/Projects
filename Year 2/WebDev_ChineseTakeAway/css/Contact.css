@@ -1,0 +1,48 @@
+#Long
+{
+	background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/asian-background-patterns-1.jpg");
+	background-repeat: repeat;
+	width: 100%;
+	height: 1400px;
+}
+
+#Text
+{
+	padding: 18px 18px;
+	width:70%;
+	height: 600px;
+	text-align: Center;
+	float: center;
+	font-size: 25px;
+	font-family: Georgia, serif;
+	margin:0 auto;
+}
+
+#Pic1
+{
+	float: left;
+	height: 180px;
+	width: 180px;
+}
+
+#Pic2
+{
+	float: right;
+	height: 180px;
+	width: 180px;
+}
+
+#Pictures
+{
+	font-family: Georgia, serif;
+	float: left;
+	font-size: 25px;
+	width: 50%;
+	height: 600px;
+}
+
+.BoldOff
+{
+    font-weight:normal;
+	font-size: 25px;
+}

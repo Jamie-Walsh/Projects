@@ -1,0 +1,67 @@
+#TextBox
+{
+    height:30px;
+	width: 300px;
+    font-size:20px;
+}
+
+#SignUp
+{
+	padding: 18px 30px;
+	float: right;
+	border-left: double;
+	width:45%;
+	height: 700px;
+	font-size: 25;
+	font: Serif;
+}
+
+#Details
+{
+	padding: 18px 18px;
+	width:55%;
+	height: 500px;
+	float: left;
+	font-size: 25px;
+	font: Serif;
+}
+
+#Pic
+{
+	width:40%;
+	height: 500px;
+	float: right;
+}
+
+#Center
+{
+	float: top;
+	text-align: center;
+	width:600px;
+	margin: 0 auto;
+	height: 50px;
+	font-size: 25;
+	font: Serif;
+}
+
+span
+{ 
+	color:#EC0910;
+	font-weight:bold;
+	font-style: italic; 
+}
+
+.bigButton 
+{
+    background-color: #EC0910;
+    border: none;
+    color: white;
+    padding: 16px 35px;
+	float: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+

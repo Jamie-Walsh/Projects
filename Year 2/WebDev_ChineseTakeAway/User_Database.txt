@@ -1,0 +1,64 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 26, 2018 at 12:54 PM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `jamie walsh-assignment`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `First_name` varchar(20) NOT NULL,
+  `Surname` varchar(20) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `Email` varchar(40) NOT NULL,
+  `Phone_Number` int(15) NOT NULL,
+  `Username` varchar(20) NOT NULL,
+  `Password` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`First_name`, `Surname`, `Address`, `Email`, `Phone_Number`, `Username`, `Password`) VALUES
+('Aoife', 'Murphy', '22 Waterford Road', 'Aoife123@gmail.com', 872218107, 'Aoife96', 'Password1'),
+('Carrington', 'Ihemadu', '44 Blanchardstown Ave', 'carro1@gmail.com', 856676548, 'Carro1', 'Password1'),
+('Jamie', 'Walsh', '22 Forrest Hill Drive', 'jamie123@hotmail.com', 873331234, 'JamieW1', 'Password1'),
+('Troy', 'Fitzgerald', 'Town', 'TroyFitz@gmail.com', 871112309, 'TroyFella21', 'Password1');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD UNIQUE KEY `Username` (`Username`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
