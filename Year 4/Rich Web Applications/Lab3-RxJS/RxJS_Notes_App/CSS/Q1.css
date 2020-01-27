@@ -1,0 +1,183 @@
+#Main
+{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+#TitleBar
+{
+	width: 100%;
+	background-color: #B0E0E6;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	font-style: italic;
+	text-shadow: -2px -1px 0 #000, 1px -1px 0 #000, -2px 1px 0 #000, 1px 1px 0 #000;
+	border-bottom: 2px solid black;
+}
+
+p
+{
+	margin: 5px 0px 5px 0px;
+}
+
+MiddleDiv
+{
+	height: 10%;
+}
+
+#txtBox
+{
+	width: 400px;
+	height: 60px;
+	border-radius: 20px;
+	padding-left: 15px;
+	border: none;
+	border: solid 1px #8ad0da;
+	margin: 15px 0px 15px 0px;
+}
+
+#txtBox:focus, .button:focus, button:focus
+{
+	outline: none;
+	box-shadow: 0px 0px 2px #000000;
+}
+
+.button
+{
+	background-color: #8ad0da;
+	border: none;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	font-size: 16;
+	width: 100px;
+	height: 40px;
+	margin-bottom: 5px;
+	margin: 15px 0px 15px 5px;
+}
+
+#Container
+{
+	width: 100%;
+	height: 100%;
+}
+
+.note
+{
+	width: 310px;
+	height: 350px;
+	margin: 15px;
+	padding: 3px;
+	background-color: #B0E0E6;
+	border: 2px solid black;
+	display: inline-block;
+	text-align: right;
+}
+
+button
+{
+	border-radius: 15px;
+	background-color: none;
+	font-size: 15px;
+	color: red;
+	background-color: white;
+	height: 28px;
+	border: 2px solid black;
+	margin-left: 2px;
+}
+
+#ColourChooser
+{
+	
+}
+
+.NoteTxt
+{
+	margin-top: 60px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 15px;
+	width: 300px;
+	height: 250px;
+	padding: 2px;
+	border: 2px solid black;
+}
+
+.ColorBtn
+{
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 30px;
+	margin: 20px 10px 20px 10px;
+}
+
+@media (max-width: 1000px) 
+{
+	.ColorBtn
+	{
+		width: 40px;
+		height: 40px;
+		border: 2px solid black;
+		border-radius: 20px;
+		margin: 20px 8px 20px 8px;
+	}
+}
+
+@media (max-width: 900px) 
+{
+	.ColorBtn
+	{
+		width: 40px;
+		height: 40px;
+		border: 2px solid black;
+		border-radius: 20px;
+		margin: 20px 6px 20px 6px;
+	}
+}
+
+@media (max-width: 720px) 
+{
+	.ColorBtn
+	{
+		width: 30px;
+		height: 30px;
+		border: 2px solid black;
+		border-radius: 15px;
+		margin: 20px 4px 20px 4px;
+	}
+}
+
+@media (max-width: 500px) 
+{
+	.ColorBtn
+	{
+		width: 28px;
+		height: 28px;
+		border: 2px solid black;
+		border-radius: 14px;
+		margin: 20px 3px 20px 3px;
+	}
+}
+
+body
+{
+	min-width: 500px;
+}
+
+#ColourSelection
+{
+	display: none;
+	position: fixed;
+	width: 60%;
+	height: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+	bottom:0%;
+	border: 2px solid black;
+	background-color: white;
+}

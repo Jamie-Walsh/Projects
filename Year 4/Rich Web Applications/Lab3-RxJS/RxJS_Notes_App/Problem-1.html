@@ -1,0 +1,35 @@
+<html>	
+	<head>
+		<link id="sheet" rel="stylesheet" href="CSS/Q1.css">
+		<script defer src="javascript/Q1.js"></script> 
+		<script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script> <!–– Added to enable RxJS functionality. --->
+	</head>
+	
+	<body>
+		<div id="Main">
+			<div id="TitleBar">
+				<p> Sticky Notes - C16358056</p>
+			</div>
+			
+			<div id="MiddleDiv">
+				<input id = "txtBox" type="text" name="txtBox" placeholder="Write Your Note Here..."></input>
+				<button name="AddButton" id="AddButton" type="button" class="button">Add Note</button> <!-- Removed onclick -->
+			</div>
+			
+			<div id="Container">
+				<!-- Notes will be dynamically added into this div. -->
+			</div>
+			
+			<div id="ColourSelection">
+				<!-- I removed the onclick event on each of the colour buttons and implemented it in RxJS instead -->
+				<button id="lightBlueBtn" class="ColorBtn" style="background-color: #B0E0E6"></button>
+				<button id="redBtn" class="ColorBtn" style="background-color: red"></button>
+				<button id="greenBtn" class="ColorBtn" style="background-color: green"></button>
+				<button id="yellowBtn" class="ColorBtn" style="background-color: yellow"></button>
+				<button id="blueBtn" class="ColorBtn" style="background-color: blue"></button>
+				<button id="pinkBtn" class="ColorBtn" style="background-color: pink"></button>
+				<button id="orangeBtn" class="ColorBtn" style="background-color: orange"></button>
+			</div>
+		</div>
+	</body>
+</html>

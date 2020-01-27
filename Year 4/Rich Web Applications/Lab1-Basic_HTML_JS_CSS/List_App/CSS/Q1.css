@@ -1,0 +1,62 @@
+#Whole
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("../Images/background_red.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#Main
+{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+#txtBox
+{
+	width: 400px;
+	height: 40px;
+	padding-left: 5px;
+	border: 1px solid red;
+}
+
+.button
+{
+	background-color: red;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16;
+	width: 150px;
+	height: 40px;
+}
+
+#list
+{
+	margin-top: 15px;
+	font: 20px solid;
+	color: black;
+	margin-left: auto;
+    	margin-right: auto;
+	width: 480px;
+	background-color: white;
+	border: 2px solid red;
+	border-radius: 25px;
+	list-style-position: inside;
+}
+
+#Pics
+{
+	width:280px;
+	height:100px;
+	padding-bottom: 20px;
+}
+
+#MyList
+{
+	text-align: left;
+}

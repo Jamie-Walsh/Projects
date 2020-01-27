@@ -1,0 +1,40 @@
+<html>
+
+	<head>
+		<title>C16358056-Lab2-Problem1</title>
+		<link rel="stylesheet" href="CSS/Q1.css">
+		<script src="javascript/Q1.js"></script>
+	</head>
+
+	<body>
+		<div id="Main">
+			<h2>Phone Directory</h2>
+			<div id="NewContact">
+				<input id = "NameInput" class="TextFields" type="text" name="NameInput" placeholder="Contact Name" required maxlength=20></input>
+				<input id = "MobileInput" class="TextFields" type="text" name="MobileInput" placeholder="Mobile Number" required maxlength=10></input>
+				<input id = "EmailInput" class="TextFields" type="text" name="EmailInput" placeholder="Email" required maxlength=39></input>
+				<button id="AddButton" class="button" type="button" name="AddButton" onclick="AddContact()">Add Contact</button>
+			</div>
+			<br>
+			<p>
+				Search contact by Mobile No:
+				<input id = "MobileSearch" class="TextFields" type="text" name="MobileSearch" placeholder="Enter Mobile Number" onkeyup="SearchContacts()"></input>
+			<p>
+			<h2>Contact Summary</h2>
+			<table id="Contacts">
+				<tr>
+					<th onclick="SortContacts()">Name</th>
+					<th>Mobile</th>
+					<th>Email</th>
+				</tr>
+			</table>
+			<br>
+			<div id="noResult">
+				<h2>No Contacts Found!</h2>
+			</div>
+			<div id="error">
+				<h2>Error! Invalid details entered.</h2>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<html>	
+	<head>
+		<link id="sheet" rel="stylesheet" href="CSS/problem-2.css">
+		<script defer src="javascript/problem-2.js"></script>
+		<script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script> <!–– Added to enable RxJS functionality. --->
+	</head>
+	
+	<body>
+		<div id="Main">			
+			<div class="Container">
+				<p>A</p>
+				<br>
+				<div class="Timer">
+					<input id="A_Hour" class="HnM" type="text" maxlength="2" name="AHH" placeholder="h"></input>
+					<p>:</p>
+					<input id="A_Min" class="HnM" type="text" maxlength="2" name="AMM" placeholder="m"></input>
+					<p>:</p>
+					<input id="A_Sec" class="Sec" type="text" maxlength="2" name="ASS" placeholder="s"></input>
+					<br>
+					<button name="A_Start" id="A_Start" type="button" class="button""><img src="images/play_arrow.png" id="startPic"></img> Start Countdown</button>
+				</div>
+			</div>
+			
+			<div class="Container">
+				<p>B</p>
+				<br>
+				<div class="Timer">
+					<input id="B_Hour" class="HnM" type="text" maxlength="2" name="BHH" placeholder="h"></input>
+					<p>:</p>
+					<input id="B_Min" class="HnM" type="text" maxlength="2" name="BMM" placeholder="m"></input>
+					<p>:</p>
+					<input id="B_Sec" class="Sec" type="text" maxlength="2" name="BSS" placeholder="s"></input>
+					<br>
+					<button name="B_Start" id="B_Start" type="button" class="button""><img src="images/play_arrow.png" id="startPic"></img> Start Countdown</button>
+				</div>
+				
+				<div id="B_Countdown" class="CountdownClock">
+					<!-- Show the countdown here when the A_Start button is pressed-->
+				</div>
+			</div>
+			
+			<div class="Container">
+				<p>C</p>
+				<br>
+				<div class="Timer">
+					<input id="C_Hour" class="HnM" type="text" maxlength="2" name="CHH" placeholder="h"></input>
+					<p>:</p>
+					<input id="C_Min" class="HnM" type="text" maxlength="2" name="CMM" placeholder="m"></input>
+					<p>:</p>
+					<input id="C_Sec" class="Sec" type="text" maxlength="2" name="CSS" placeholder="s"></input>
+					<br>
+					<button name="C_Start" id="C_Start" type="button" class="button"><img src="images/play_arrow.png" id="startPic"></img> Start Countdown</button>
+				</div>
+				
+				<div id="C_Countdown" class="CountdownClock">
+					<!-- Show the countdown here when the A_Start button is pressed-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+	<script> 
+		// Set off the Insert button onclick event when the enter key is pressed.
+		// Good for usability since it is the only button on the web page.
+		window.addEventListener("keyup", function(event) 
+		{
+			if (event.keyCode === 13) 
+			{
+				event.preventDefault();
+				document.getElementById("Insert").click();
+			}
+		});
+		
+		// Called when the Insert button is pressed.
+		function AddToList()
+		{
+			// Create a <li> node that you can add to the list.
+			let NewListItem = document.getElementById('txtBox').value;
+			let node        = document.createElement("LI");
+			let ListCount   = document.getElementsByTagName("LI").length+1;
+			let text        = document.createTextNode(NewListItem);
+			node.append(text);
+			
+			if(NewListItem.length != 0)
+			{
+				// Every third item in the list is to be displayed in red.
+				if((ListCount % 3) == 0)
+				{
+					node.style.color = "red";
+				}
+				else
+				{
+					node.style.color = "black";
+				}
+				
+				// Add the item to the list.
+				document.getElementById('MyList').appendChild(node);
+				
+				// Clear the textbox so the user can type another item instantly.
+				document.getElementById('txtBox').value = '';
+			}
+			else
+			{
+				alert("Please type something into the text box!");
+			}
+		}
+	</script>
+	
+	<head>
+		<link id="sheet" rel="stylesheet" href="CSS/Q1.css">
+	</head>
+
+	<body>
+		<div id="Whole">
+			<div id="Main"> 
+				<h1>Lab 1 - Question 1 - C16358056</h1>
+				<input id = "txtBox" type="text" name="txtBox" placeholder="Add An Item To Your List..."></input>
+				<button name="Insert" id="Insert" type="button" class="button" onclick="AddToList()">Insert</button>
+				
+				<div id="list">
+					<h3>My List</h3>
+					<ul id = "MyList">
+					</ul>
+				</div>
+			</div>
+		</div>
+	<body>
+</html>

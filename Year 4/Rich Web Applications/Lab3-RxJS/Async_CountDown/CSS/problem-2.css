@@ -1,0 +1,94 @@
+.Container
+{
+	vertical-align: top;
+	width: 30%;
+	height: 700px;
+	margin: 0px 1.5% 0px 1.5%;
+	padding-top: 20px;
+	display: inline-block;
+	text-align: center;
+	font: 50px solid black;
+}
+
+.Timer
+{
+	padding-top: 5px;
+	background-color: #DCDCDC;
+	border: 2px solid black;
+	width: 340px;
+	height: 190px;
+	display: inline-block;
+}
+
+.button
+{
+	background-color: white;
+	border: 1px solid black;
+	width: 250px;
+	height: 45px;
+	font-size: 26px;
+	margin-top: 25px;
+}
+
+.HnM
+{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.Sec
+{
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid black;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+#startPic
+{
+	width: 23px; 
+	height: 23px;
+}
+
+@media (max-width: 1100px)
+{
+	
+}
+
+.CountdownClock
+{
+	display: inline-block;
+	padding: 0px;
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	width: 340px;
+	height: 130px;
+	font: 90px solid black;
+	font-weight: bold;
+}
+
+#B_Countdown
+{
+	visibility: hidden;
+}
+
+#C_Countdown
+{
+	visibility: hidden;
+}

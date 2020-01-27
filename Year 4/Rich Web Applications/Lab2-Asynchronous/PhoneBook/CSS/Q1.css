@@ -1,0 +1,101 @@
+#Main
+{
+	text-align: center;
+	height: 100%;
+}
+
+p
+{
+	font-weight: bold;
+}
+
+#NewContact
+{
+	font: 20px solid;
+	color: black;
+	margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items:center;
+	width: 600px;
+	height: 130px;
+	background-color: #0cb6ff;
+	border: 2px solid blue;
+	border-radius: 25px;
+}
+
+.TextFields
+{
+	width: 150px;
+	height: 30px;
+	margin-right: 3px;
+	border: 1px solid black;
+	padding-left: 1px;
+}
+
+.button
+{
+	width: 100px;
+	height: 30px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#Contacts
+{
+    border-collapse: collapse;
+	margin: auto;
+    width: 600px;
+	border: 2px solid black;
+}
+
+#Contacts td, #Contacts th 
+{
+    border: 1px solid black;
+	text-align: center;
+}
+
+#Contacts tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
+
+#Contacts th 
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: white;
+    color: black;
+}
+
+#noResult
+{
+	display: none;
+	margin: auto;
+	width: 400px;
+	height: 100px;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	border: 2px solid blue;
+	background-color: #f5f5f5;
+	border-radius: 20px;
+}
+
+#error
+{
+	display: none;
+	position: fixed;
+	text-align: center;
+	width: 26%;
+	margin-left: 37%;
+	margin-right: 37%;
+	height: 180px;
+	bottom:0%;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid black;
+	background-color: red;
+}
